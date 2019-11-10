@@ -165,7 +165,8 @@ android_library {
         "SettingsLib",
         "monet",
         "bcsmartspace-google",
-        "SystemUIPluginLib"
+        "SystemUIPluginLib",
+        "VendorSupport-preference"
     ],
     manifest: "AndroidManifest-common.xml",
     sdk_version: "current",
