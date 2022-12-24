@@ -10,7 +10,7 @@
     <string name="clown_app_name" translatable="false">ClownUI Launcher</string>
 
     <!-- General -->
-    <string name="settings_title">Home settings</string>
+    <string name="settings_title">ClownUI Launcher settings</string>
 
     <!-- Categories -->
     <string name="home_category_title">Home screen</string>
