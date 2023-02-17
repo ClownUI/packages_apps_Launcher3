@@ -209,14 +209,15 @@
 
     <!-- QuickSpace: QuickEvent: Device Intro Event -->
     <string name="quick_event_rom_intro_welcome" translatable="false">Welcome to ClownUI!</string>
+    <string name="quick_event_rom_intro_welcome_ext" translatable="false">Something NEW!</string>
     <string-array name="welcome_message_variants" translatable="false">
         <item>Have a great day!</item>
-        <item>Thank you for flashing ClownUI!</item>
-        <item>Loving us? Send us a soju!</item>
+        <item>Thank you for flashing</item>
+        <item>Loving us? Send me a rootbeer!</item>
         <item>We\'re not the best, but at least we try!</item>
-        <item>Share us on twitter! #gtrcd</item>
         <item>Tap here to begin</item>
-        <item>We love it when you enjoy ClownUI!</item>
+        <item>Enjoy our OS!</item>
+        <item>Explore Goodies</item>
     </string-array>
 
     <!-- QuickSpace: QuickEvent: Greetings -->
