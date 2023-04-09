@@ -33,11 +33,13 @@ import android.view.animation.Interpolator;
 import android.window.OnBackInvokedDispatcher;
 
 import androidx.annotation.Nullable;
+import androidx.core.graphics.ColorUtils;
 
 import com.android.app.animation.Interpolators;
 import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.Insettable;
 import com.android.launcher3.R;
+import com.android.launcher3.Utilities;
 import com.android.launcher3.anim.AnimatorListeners;
 import com.android.launcher3.anim.PendingAnimation;
 import com.android.launcher3.config.FeatureFlags;
@@ -238,9 +240,9 @@ public class TaskbarAllAppsSlideInView extends AbstractSlideInView<TaskbarOverla
 
     @Override
     protected int getScrimColor(Context context) {
-        return mActivityContext.getDeviceProfile().isPhone
-                ? Themes.getAttrColor(context, R.attr.allAppsScrimColor)
-                : context.getColor(R.color.widgets_picker_scrim);
+        return ColorUtils.setAlphaComponent(
+                Themes.getAttrColor(mActivityContext, R.attr.allAppsScrimColor),
+                Utilities.getAllAppsOpacity(mActivityContext) * 255 / 100);
     }
 
     @Override
