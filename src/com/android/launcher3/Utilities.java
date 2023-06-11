@@ -195,6 +195,7 @@ public final class Utilities {
     public static final String KEY_SINGLE_PAGE_CENTER = "pref_single_page_center";
     public static final String KEY_FORCE_MONOCHROME_ICONS = "pref_forced_monochrome_icons";
     public static final String KEY_MONOCHROME_SEARCH_THEME = "pref_monochrome_search_theme";
+    public static final String KEY_TRANSIENT_TASKBAR = "pref_transient_taskbar";
 
     /**
      * Returns true if theme is dark.
@@ -1056,4 +1057,9 @@ public final class Utilities {
     	SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
     	return prefs.getBoolean(KEY_MONOCHROME_SEARCH_THEME, false);
    }
+
+    public static boolean isTransientTaskBarEnabled(Context context) {
+        SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_TRANSIENT_TASKBAR, false);
+    }
 }
