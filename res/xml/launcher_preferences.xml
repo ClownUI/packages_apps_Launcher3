@@ -130,7 +130,7 @@
             android:defaultValue="true"
             android:persistent="true" />
 
-        <com.android.settings.custom.preference.CustomSeekBarPreference
+        <com.android.settings.clown.preference.CustomSeekBarPreference
             android:key="pref_custom_icon_size"
             android:title="@string/icon_size_title"
             android:persistent="true"
@@ -139,7 +139,7 @@
             settings:units="%"
             android:defaultValue="100" />
   
-        <com.android.settings.custom.preference.CustomSeekBarPreference
+        <com.android.settings.clown.preference.CustomSeekBarPreference
             android:key="pref_custom_font_size"
             android:title="@string/font_size_title"
             android:persistent="true"
@@ -148,7 +148,7 @@
             settings:units="%"
             android:defaultValue="100" />
 
-        <com.android.settings.custom.preference.CustomSeekBarPreference
+        <com.android.settings.clown.preference.CustomSeekBarPreference
             android:key="pref_max_lines"
             android:title="@string/icon_max_lines_title"
             android:persistent="true"

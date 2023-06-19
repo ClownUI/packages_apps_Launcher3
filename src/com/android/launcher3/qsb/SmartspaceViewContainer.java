@@ -12,8 +12,8 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.FrameLayout.LayoutParams;
 
-import com.android.launcher3.CustomLauncher;
-import com.android.launcher3.CustomLauncherModelDelegate;
+import com.android.launcher3.ClownLauncher;
+import com.android.launcher3.ClownLauncherModelDelegate;
 
 import com.android.launcher3.celllayout.CellLayoutLayoutParams;;
 import com.android.launcher3.DeviceProfile;
@@ -48,10 +48,10 @@ public class SmartspaceViewContainer extends FrameLayout implements PluginListen
         layoutParams.setMarginStart(getResources().getDimensionPixelSize(R.dimen.enhanced_smartspace_margin_start_launcher));
         addView(mView, layoutParams);
 
-        CustomLauncher launcher = (CustomLauncher) ActivityContext.lookupContext(context);
+        ClownLauncher launcher = (ClownLauncher) ActivityContext.lookupContext(context);
         launcher.getLauncherUnlockAnimationController().setSmartspaceView(mView);
 
-        CustomLauncherModelDelegate delegate = (CustomLauncherModelDelegate) launcher.getModel().getModelDelegate();
+        ClownLauncherModelDelegate delegate = (ClownLauncherModelDelegate) launcher.getModel().getModelDelegate();
         BcSmartspaceDataProvider plugin = launcher.getSmartspacePlugin();
         plugin.registerSmartspaceEventNotifier(event -> delegate.notifySmartspaceEvent(event));
         mView.registerDataProvider(plugin);
@@ -64,7 +64,7 @@ public class SmartspaceViewContainer extends FrameLayout implements PluginListen
 
     @Override
     public void onPluginDisconnected(BcSmartspaceDataPlugin plugin) {
-        CustomLauncher launcher = (CustomLauncher) ActivityContext.lookupContext(getContext());
+        ClownLauncher launcher = (ClownLauncher) ActivityContext.lookupContext(getContext());
         mView.registerDataProvider(launcher.getSmartspacePlugin());
     }
 

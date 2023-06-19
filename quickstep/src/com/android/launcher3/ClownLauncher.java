@@ -19,7 +19,7 @@ package com.android.launcher3;
 import android.app.smartspace.SmartspaceTarget;
 import android.os.Bundle;
 
-import com.android.launcher3.CustomLauncherModelDelegate.SmartspaceItem;
+import com.android.launcher3.ClownLauncherModelDelegate.SmartspaceItem;
 
 import com.android.launcher3.model.BgDataModel;
 import com.android.launcher3.qsb.LauncherUnlockAnimationController;
