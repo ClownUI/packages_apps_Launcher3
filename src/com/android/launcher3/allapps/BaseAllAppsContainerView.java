@@ -79,7 +79,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
-import ink.kaleidoscope.ParallelSpaceManager;
 
 /**
  * Base all apps view container.
@@ -106,7 +105,8 @@ public abstract class BaseAllAppsContainerView<T extends Context & ActivityConte
     /** Context of an activity or window that is inflating this container. */
     protected final T mActivityContext;
     protected final List<AdapterHolder> mAH;
-    protected Predicate<ItemInfo> mPersonalMatcher;
+    protected final Predicate<ItemInfo> mPersonalMatcher = ItemInfoMatcher.ofUser(
+            Process.myUserHandle());
     private final AllAppsStore mAllAppsStore = new AllAppsStore();
 
     private final RecyclerView.OnScrollListener mScrollListener =
@@ -196,7 +196,6 @@ public abstract class BaseAllAppsContainerView<T extends Context & ActivityConte
         mAH.set(AdapterHolder.MAIN, new AdapterHolder(AdapterHolder.MAIN));
         mAH.set(AdapterHolder.WORK, new AdapterHolder(AdapterHolder.WORK));
         mAH.set(AdapterHolder.SEARCH, new AdapterHolder(AdapterHolder.SEARCH));
-        updateMatcher();
 
         getLayoutInflater().inflate(R.layout.all_apps_content, this);
         mHeader = findViewById(R.id.all_apps_header);
@@ -321,16 +320,8 @@ public abstract class BaseAllAppsContainerView<T extends Context & ActivityConte
         // added in TaskbarAllAppsContainerView and header protection is not yet supported.
     }
 
-    private void updateMatcher() {
-        mPersonalMatcher = ItemInfoMatcher.ofUser(
-                Process.myUserHandle()).or(ItemInfoMatcher.ofUsers(
-                    ParallelSpaceManager.getInstance().getParallelUserHandles()));
-        mWorkManager.updateMatcher();
-    }
-
     private void onAppsUpdated() {
         mHasWorkApps = Stream.of(mAllAppsStore.getApps()).anyMatch(mWorkManager.getMatcher());
-        updateMatcher();
         if (!isSearching()) {
             rebindAdapters();
             if (mHasWorkApps) {
