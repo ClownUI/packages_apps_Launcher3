@@ -20,12 +20,12 @@
     android:layout_marginEnd="16dp"
     android:layout_marginTop="24dp"
     android:layout_gravity="center_vertical"
-    android:id="@+id/banana_logo"
+    android:id="@+id/clown_logo"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content">
 
     <ImageView
-    	android:id="@id/banana_logo"
+    	android:id="@id/clown_logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="36dp"
@@ -33,7 +33,7 @@
         android:layout_marginStart="36dp"
         android:layout_centerVertical="true"
         android:minWidth="48dp"
-        android:src="@drawable/ic_banana"
+        android:src="@drawable/ic_clown"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"/>
         
@@ -47,7 +47,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginEnd="26dp"
         android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/banana_logo">
+        android:layout_toEndOf="@+id/clown_logo">
         
         <TextView
             android:layout_width="match_parent"

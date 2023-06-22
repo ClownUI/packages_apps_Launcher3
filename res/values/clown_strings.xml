@@ -5,13 +5,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Application name -->
-    <string name="custom_app_name" translatable="false">Banana Home</string>
+    <string name="custom_app_name" translatable="false">Clown Home</string>
 
     <!-- Folder titles -->
     <string name="google_folder_title" translatable="false">Google</string>
 
     <!-- General -->
-    <string name="settings_title">Home settings</string>
+    <string name="settings_title">Clown settings</string>
 
     <!-- Categories -->
     <string name="home_category_title">Home screen</string>
@@ -140,12 +140,12 @@
     <string name="quickspace_center_style_summary">Switch to center position</string>
 
     <string-array translatable="false" name="welcome_message_variants">
-        <item>#GetBanana &#127834;</item>
-        <item>#EatBanana &#129425;</item>
+        <item>#WhySoSerious!? &#127834;</item>
+        <item>#Hahahaha &#129425;</item>
         <item>#StayHealthy &#127858;</item>
         <item>#KeepYourSmile &#127834;</item>
-        <item>Welcome to BananaDroid</item>
-        <item>Enjoy your banana!</item>
+        <item>Welcome to ClownUI</item>
+        <item>Enjoy your Smile!</item>
         <item>Please enjoy our delicacies &#127834;</item>
     </string-array>
     
@@ -161,7 +161,7 @@
         <item>Don\'t forget to prepare breakfast.</item>
         <item>Check the weather, just in case.</item>
         <item>Take a deep breath and go out!</item>
-        <item>Grab some banana to start your day.</item>
+        <item>Grab some Clown to start your day.</item>
         <item>Check your schedule if you have one.</item>
         <item>Enjoy your day.</item>
         <item>Fart first, pee later</item>
@@ -175,9 +175,9 @@
         <item>Remember to eat some snacks.</item>
         <item>UV rays are more harmful in the afternoon.</item>
         <item>It is afternoon right now.</item>
-        <item>Eat Banana &amp; Stay Healthy</item>
+        <item>Clown &amp; Stay Healthy</item>
         <item>Keep spirit and smile</item>
-        <item>Have a great banana day!</item>
+        <item>Have a great comedy day!</item>
         <item>Don\'t be overload, it\'s still a long day to go</item>
         <item>Make a smile as your bestfriend</item>
         <item>Try to be a rainbow in someone\'s cloud</item>
@@ -221,8 +221,8 @@
         <item>Please take care of yourself.</item>
     </string-array>
     <string-array name="quickspace_psa_random">
-        <item>Thank you for choosing BananaDroid</item>
-        <item>Welcome Banana Lover</item>
+        <item>Thank you for choosing ClownUI</item>
+        <item>Welcome Clown Lover</item>
         <item>Try to avoid UV rays during noon.</item>
         <item>Stay Hydrated!</item>
         <item>You need to take more water during the day.</item>
@@ -232,10 +232,10 @@
         <item>Eating eggs improves your reflexes.</item>
         <item>Remember to fart</item>
         <item>Relax your mind</item>
-        <item>Eat Banana &amp; Stay Healthy</item>
+        <item>ClownUI &amp; Stay Healthy</item>
         <item>Check your to-do list if you have one.</item>
-        <item>Have a great banana day</item>
-        <item>Ready to grab some bananas?</item>
+        <item>Have a great smile day</item>
+        <item>Ready to grab some Clown?</item>
         <item>Don\'t forget to be happy</item>
         <item>Brush your teeth!</item>
         <item>Ente kadang kadang ente</item>
@@ -287,12 +287,12 @@
     <string name="app_info_more">More</string>
 
     <!-- About info -->
-    <string name="about_app_title" translatable="false">Banana Home</string>
+    <string name="about_app_title" translatable="false">Clown Home</string>
     <string name="about_app_subtitle">Based on AOSP Launcher3</string>
-    <string name="about_app_version">TQ2A.230505.002</string>
+    <string name="about_app_version">TQ2B.230505.005.A1</string>
     <string name="about_thanks_cat">Special thanks to</string>
     <string name="about">About</string>
-    <string name="about_summary">Info about the Banana Home</string>
+    <string name="about_summary">Info about the Clown Home</string>
 
     <!-- Icon pack -->
     <string name="icon_pack_title">Icon pack</string>
