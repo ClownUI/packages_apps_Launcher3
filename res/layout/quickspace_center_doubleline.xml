@@ -79,25 +79,6 @@
         android:layout_gravity="center"
         android:paddingTop="9dp">
 
-	<com.android.launcher3.quickspace.views.WeatherImage
-        android:id="@+id/weather_image"
-        android:layout_gravity="center"
-        android:layout_width="18dp"
-        android:layout_height="18dp" />
-
-	<com.android.launcher3.quickspace.views.WeatherText
-        android:id="@+id/weather_temp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:paddingStart="6dp"
-        android:maxLines="1"
-        android:fontFamily="@*android:string/config_bodyFontFamily"
-        android:lineHeight="20sp"
-        android:textColor="?workspaceTextColor"
-        android:textSize="16sp"
-        android:letterSpacing="0.02"/>
-
     </LinearLayout>
     
     <LinearLayout
