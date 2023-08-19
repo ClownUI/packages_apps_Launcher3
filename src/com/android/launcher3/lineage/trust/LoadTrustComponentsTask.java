@@ -26,7 +26,7 @@ import android.os.Build;
 
 import androidx.annotation.NonNull;
 
-import com.android.internal.util.cherish.Utils;
+import com.android.internal.util.clown.ClownUtils;
 import com.android.launcher3.lineage.trust.db.TrustComponent;
 
 import java.util.ArrayList;
@@ -65,7 +65,7 @@ public class LoadTrustComponentsTask extends AsyncTask<Void, Integer, List<Trust
                     PackageInfoFlags.of(Long.valueOf(PackageManager.MATCH_ALL)));
 
         int numPackages = apps.size();
-        List<String> launchablePackages = Utils.launchablePackages(mContext);
+        List<String> launchablePackages = ClownUtils.launchablePackages(mContext);
         List<String> whiteListedPackages = Arrays.asList(mContext.getResources().getStringArray(
                 com.android.internal.R.array.config_appLockAllowedSystemApps));
 
