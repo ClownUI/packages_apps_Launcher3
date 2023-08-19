@@ -3,7 +3,11 @@
 xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:settings="http://schemas.android.com/apk/res-auto">
 
-        
+    <PreferenceScreen
+            android:layout="@layout/clown_logo"
+            android:key="clown_logo"
+            android:selectable="false" />
+            
     <PreferenceCategory 
         android:title="@string/about_thanks_cat" >
 
